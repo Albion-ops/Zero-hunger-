@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login - Zero Hunger</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="auth.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Zero Hunger System</h1>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="submit.html">Share Resource</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="admin.html">Admin</a>
+            </nav>
+        </header>
+        <main>
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button id="loginTab" class="auth-tab active">Login</button>
+                    <button id="registerTab" class="auth-tab">Sign Up</button>
+                </div>
+
+                <!-- Login Form -->
+                <div id="loginForm" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to your account to continue helping fight
+                        hunger.</p>
+
+                    <div id="loginMessages"></div>
+
+                    <form id="loginFormElement">
+                        <label for="loginUsername">Username or Email</label>
+                        <input id="loginUsername" name="username" type="text"
+                            required>
+
+                        <label for="loginPassword">Password</label>
+                        <input id="loginPassword" name="password"
+                            type="password" required>
+
+                        <button type="submit">Sign In</button>
+                    </form>
+
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="#"
+                                id="switchToRegister">Sign up here</a></p>
+                    </div>
+                </div>
+
+                <!-- Register Form -->
+                <div id="registerForm" class="auth-form">
+                    <h2>Join the Fight Against Hunger</h2>
+                    <p>Create an account to start sharing food resources and
+                        making a difference.</p>
+
+                    <div id="registerMessages"></div>
+
+                    <form id="registerFormElement">
+                        <label for="registerFullName">Full Name</label>
+                        <input id="registerFullName" name="full_name"
+                            type="text">
+
+                        <label for="registerUsername">Username</label>
+                        <input id="registerUsername" name="username" type="text"
+                            required>
+
+                        <label for="registerEmail">Email</label>
+                        <input id="registerEmail" name="email" type="email"
+                            required>
+
+                        <label for="registerPassword">Password</label>
+                        <input id="registerPassword" name="password"
+                            type="password" required minlength="6">
+                        <small>Password must be at least 6 characters
+                            long</small>
+
+                        <label for="registerConfirmPassword">Confirm
+                            Password</label>
+                        <input id="registerConfirmPassword"
+                            name="confirm_password" type="password" required>
+
+                        <button type="submit">Create Account</button>
+                    </form>
+
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="#"
+                                id="switchToLogin">Sign in here</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Zero Hunger System</p>
+        </footer>
+    </body>
+</html>

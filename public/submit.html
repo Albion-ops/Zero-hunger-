@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Share Resource - Zero Hunger</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="auth.js" defer></script>
+    <script src="submit.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Share a Food Resource</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="submit.html">Share Resource</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+    <main>
+      <div id="messages"></div>
+      <form id="resourceForm">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <label for="location">Location (city / address)</label>
+        <input id="location" name="location" required>
+
+        <label for="food_type">Type of food</label>
+        <input id="food_type" name="food_type" required>
+
+        <label for="quantity">Quantity / estimated amount</label>
+        <input id="quantity" name="quantity">
+
+        <label for="notes">Notes (collection time, storage requirements)</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Submit Resource</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Zero Hunger System</p>
+    </footer>
+  </body>
+</html>
